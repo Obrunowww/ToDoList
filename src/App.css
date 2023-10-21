@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: tomato;
+    align-items: center;
+    flex-direction: column;
+}
+.caixaDoInput{
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.caixaDoInput input{
+    width: 20%;
+    height: 40%;
+}
+.caixaDoInput button{
+    height: 40%;
+}
+.tarefas{
+    gap: 30px;
+    width: 40%;
+    overflow: hidden auto;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease 2s;
+}
+.tarefa{
+    padding-right: 2%;
+    background-color: rgba(0, 255, 242, 0.863);
+    flex: none;
+    border-radius: 10px;
+    display: flex;
+    width: 80%;
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+    transition: all ease 1s;
+    
+}
+.tarefa p{
+    font-size: 30px;
+    color: blue;
+}
+.tarefa button{
+    width: 5%;
+    height: 50%;
+    background-color: transparent;
+    border: solid 1px black;
+    font-size: 18px;
+    background-color: rgba(250, 25, 25, 0.979);
+    transition: all ease 1s;
+    cursor: pointer;
+}
+.tarefa button:hover{
+    scale: 1.2;
+}
+
+
+
+.quadradoDeconfirmação{
+    display: flex;
+    background-color: white;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    width: 5%;
+    height: 40%;
+    border: solid 1px;
+
+}
+.quadradoDeconfirmação p{
+    font-size: 15px;
+}
+.animação{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.301);
+    display: flex;
+    position: absolute;
+}
+figure{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.animação img{
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    height: 40%;
+    animation: subir 3s forwards, aumentarTamanho 0.1s 2.9s forwards;
+    bottom: unset;
+    top: 0;
+}
+
+@keyframes subir {
+    from {
+        top: 60%;
+    }
+    to {
+        top: 0;
+    }
+
+    
+    
+}
+@keyframes aumentarTamanho {
+    to {
+        left: 0;
+        width:100%;
+        height: 100%;
+    }
+}
